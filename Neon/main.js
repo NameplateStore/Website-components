@@ -59,3 +59,68 @@ window.onload = function() {
   }
   
   
+//Update Price
+
+// const price =()=>{
+//   let neonChar = document.getElementById("myHeading");
+//   let textContent = neonChar.textContent;
+//   let numChar = textContent.length;
+
+//   if (numChar === 0) {
+//     let price = document.getElementById('price');
+//     let newPrice = 00;
+//   }
+//   console.log(numChar)
+// }
+
+// Function to update the heading and calculate price
+// function updateHeading() {
+//   var userInput = document.getElementById('myInput').value;
+//   var characterCount = userInput.length;
+//   var price = 10 * 15 * 4 * characterCount;
+
+//   document.getElementById('myHeading').textContent = userInput;
+//   document.getElementById('price').textContent = '₹ ' +  price;
+// }
+
+// // Function to handle the initial page load
+// function initializePage() {
+//   document.getElementById('myInput').addEventListener('input', updateHeading);
+// }
+
+// // Call the initializePage function when the DOM is loaded
+// document.addEventListener('DOMContentLoaded', initializePage);
+
+function updateHeading() {
+  var userInput = document.getElementById('myInput').value;
+  var characterCount = userInput.length;
+  var price = 10 * 15 *4 * characterCount;
+
+  document.getElementById('myHeading').textContent = userInput;
+  document.getElementById('price').textContent = '₹ ' + formatPrice(price);
+}
+
+function formatPrice(price) {
+  var formattedPrice = price.toLocaleString('en-IN');
+  return formattedPrice;
+}
+//Update width
+function updateWidth() {
+  var userInput = document.getElementById('myInput').value;
+  var width1 = document.getElementById('width1');
+  var width2 = document.getElementById('width2');
+  var width3 = document.getElementById('width3');
+
+  var widthValue1 = '"' + userInput.length * 3 + '"';
+  var widthValue2 = '"' + userInput.length * 4 + '"';
+  var widthValue3 = '"' + userInput.length * 5 + '"';
+
+  width1.textContent = widthValue1;
+  width2.textContent = widthValue2;
+  width3.textContent = widthValue3;
+}
+
+// Call the updateWidth function when the DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('myInput').addEventListener('input', updateWidth);
+});

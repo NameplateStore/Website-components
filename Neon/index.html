@@ -20,13 +20,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&family=Satisfy&family=Varela+Round&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Macondo&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Yellowtail&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Sacramento&family=Yellowtail&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Mr+Dafoe&family=Sacramento&family=Yellowtail&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Great+Vibes&family=Kaushan+Script&family=Macondo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Macondo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Sacramento&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Mr+Dafoe&family=Sacramento&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Great+Vibes&family=Kaushan+Script&family=Macondo&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -39,8 +44,14 @@
             </div>
             <div class="userInput my-5 border border-white rounded">
                 <h3>Type Your Text Here</h3>
+                <h2 class="text-light mx-3 " id="price" onclick="price()">₹</h2>
                 <input type="text" id="myInput" value="" class="form__input mx-3" placeholder="Yourname"
                     oninput="updateHeading()">
+
+
+                <!-- Color Buttons -->
+
+
                 <div class="colorBtn  d-flex justify-content-center align-items-center my-3">
                     <button type="button" class="btn btn-primary mx-2 rounded-circle"
                         onclick="changeNeonColor('blue')"></button>
@@ -55,6 +66,9 @@
                     <button type="button" class="btn btn-info mx-2 rounded-circle"
                         onclick="changeNeonColor('skyblue')"></button>
                 </div>
+
+
+                <!-- Font Buttons -->
                 <div class="fontBtn d-flex justify-content-center align-items-center my-3 bg-dark p-3 my-2">
                     <div class="row">
                         <div class="col my-2 mx-2">
@@ -127,6 +141,33 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Size  -->
+                <div class="container text-light d-flex my-3 justify-content-center">
+                    <div class="card mx-3 border bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Regular</h5>
+                            <p class="card-text">Width: <span id="width1">"</span></p>
+                            <p class="card-text">Height: 10 "</p>
+                        </div>
+                    </div>
+                    <div class="card mx-3 border bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Medium</h5>
+                            <p class="card-text">Width: <span id="width2">"</span></p>
+                            <p class="card-text">Height: 13 "</p>
+                        </div>
+                    </div>
+
+                    <div class="card mx-3 bg-dark text-light border">
+                        <div class="card-body">
+                            <h5 class="card-title">Large</h5>
+                            <p class="card-text">Width: <span id="width3">"</span></p>
+                            <p class="card-text">Height: 15 "</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
